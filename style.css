@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+.fiter-select-container {
+    width: 100%;
+    height: 100%;    
+}
+
+.select-container-block {
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-block-selected {
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.block-selected-text {
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 20px;
+    color: #8A8A8A;
+    padding-left:10px ;
+}
+
+.block-selected-arrow {
+    padding-right:10px;
+    transition: all 0.3s;
+}
+
+.container-block-optionslist {
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+
+.container-block-optionslist.active {
+    opacity: 1;
+    overflow: 1;
+    transition: all 0.3s;
+}
+
+.block-selected-arrow.active {
+    transform: rotateZ(180deg);
+    transition: all 0.3s;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
