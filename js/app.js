@@ -1,7 +1,7 @@
-const selected = document.querySelector(".container-block-selected");
-const optionsContainer = document.querySelector(".container-block-optionslist");
-const optionsList = document.querySelectorAll(".block-optionslist-option");
-const arrow = document.querySelector(".block-selected-arrow")
+let selected = document.querySelector(".container-block-selected");
+let optionsContainer = document.querySelector(".container-block-optionslist");
+let optionsList = document.querySelectorAll(".block-optionslist-option");
+let arrow = document.querySelector(".block-selected-arrow")
 
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
